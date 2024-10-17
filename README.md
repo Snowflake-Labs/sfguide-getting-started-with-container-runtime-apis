@@ -14,7 +14,7 @@ To dive into each of these quickstarts and set up your environment for distribut
    Ensure you have the required environment set up with access to Snowflake’s Container Runtime APIs. For more details on setting up and accessing Snowflake Notebooks, refer to the [Snowflake Documentation](https://quickstarts.snowflake.com/guide/train-an-xgboost-model-with-gpus-using-snowflake-notebooks/index.html#3). 
 
 2. **Data Loading** (Required Step)  
-   Before proceeding to the model training quickstarts, you must load your dataset into Snowflake. Run the [step_1_load_dataset.ipynb](notebooks/step_1_load_dataset.ipynb) notebook to load data into a Snowflake table. **This is a required step** for all the subsequent notebooks that perform model training, as they rely on data stored in Snowflake.
+   Before proceeding to the model training quickstarts, you must load your dataset into Snowflake. Run the [step_1_load_dataset.ipynb](step_1_load_dataset.ipynb) notebook to load data into a Snowflake table. **This is a required step** for all the subsequent notebooks that perform model training, as they rely on data stored in Snowflake.
 
 3. **Environment Setup**  
    Each quickstart provides instructions for setting up a Snowflake session, loading data from Snowflake tables, and configuring the necessary resources (CPUs, GPUs, etc.) for distributed training.
