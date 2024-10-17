@@ -13,10 +13,13 @@ To dive into each of these quickstarts and set up your environment for distribut
 1. **Prerequisites**  
    Ensure you have the required environment set up with access to Snowflake’s Container Runtime APIs. For more details on setting up and accessing Snowflake Notebooks, refer to the [Snowflake Documentation](https://quickstarts.snowflake.com/guide/train-an-xgboost-model-with-gpus-using-snowflake-notebooks/index.html#3). 
 
-2. **Environment Setup**  
+2. **Data Loading** (Required Step)  
+   Before proceeding to the model training quickstarts, you must load your dataset into Snowflake. Run the [step_1_load_dataset.ipynb](notebooks/step_1_load_dataset.ipynb) notebook to load data into a Snowflake table. **This is a required step** for all the subsequent notebooks that perform model training, as they rely on data stored in Snowflake.
+
+3. **Environment Setup**  
    Each quickstart provides instructions for setting up a Snowflake session, loading data from Snowflake tables, and configuring the necessary resources (CPUs, GPUs, etc.) for distributed training.
 
-3. **Run the Quickstart Notebooks**  
+4. **Run the Quickstart Notebooks**  
    - **XGBoost**: Follow the instructions in the [XGBoost QuickStart Guide](https://github.com/snowflakedb/sfguide-getting-started-with-container-runtime-api/blob/main/XGBoost_on_GPU_Quickstart.ipynb) to configure distributed XGBoost training using GPUs.
    - **LightGBM**: Start with the [LightGBM QuickStart Guide](https://github.com/snowflakedb/sfguide-getting-started-with-container-runtime-api/blob/main/LightGBM_on_GPU_Quickstart.ipynb) to configure distributed LightGBM training using GPUs.
    - **PyTorch**: Learn how to train models using PyTorch with the [PyTorch QuickStart Guide](https://github.com/snowflakedb/sfguide-getting-started-with-container-runtime-api/blob/main/PyTorch_on_GPU_Quickstart.ipynb) and experience the benefits of distributed GPU training.
